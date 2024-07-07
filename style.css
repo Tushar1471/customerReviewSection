@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>#content {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content>#review_context {
+    width: 35%;
+}
+
+#content>#review_context>h1 {
+    color: rgb(72, 2, 72);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#content>#review_context>p {
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 20px;
+}
+
+#content>#star_rating {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+#content>#star_rating>.ratedStars {
+    width: 75%;
+    height: 40px;
+    background-color: rgb(198, 181, 215, 0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(72, 2, 72);
+    font-weight: 600;
+}
+
+#box1 {
+    margin-right: 100px;
+}
+
+#box2 {
+    margin-right: 50px;
+}
+
+main>#cards {
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#cards>.reviewCard {
+    width: 32%;
+    height: 90%;
+    background-color: rgb(62, 2, 62);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+#card1 {
+    margin-bottom: 20px;
+}
+
+#card2 {
+    margin-bottom: 10px;
+}
+
+#cards>.reviewCard>.bio {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#cards>.reviewCard>.bio>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#cards>.reviewCard>.bio>.name {
+    margin-left: 25px;
+}
+
+#cards>.reviewCard>.bio>.name>.username {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#cards>.reviewCard>.bio>.name>.buyer {
+    color: rgb(135, 90, 141);
+}
+
+#cards>.reviewCard>.reviewText {
+    width: 80%;
+    text-align: justify;
+    line-height: 22px;
+}
+
+@media screen and (max-width:624px) {
+    main {
+        justify-content: space-evenly;
+        overflow: none;
+    }
+    main>#content {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #content>#review_context {
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+    #content>#review_context>h1 {
+        color: rgb(72, 2, 72);
+        font-size: 35px;
+        font-weight: 700;
+    }
+    #content>#review_context>p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    #content>#star_rating {
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #box1 {
+        margin-right: 0;
+    }
+    #box2 {
+        margin-right: 0;
+    }
+    #content>#star_rating>.ratedStars {
+        width: 90%;
+        height: 60px;
+        margin-bottom: 5px;
+        justify-content: space-around;
+    }
+    main>#cards {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    main>#cards>.reviewCard {
+        width: 90%;
+        height: 250px;
+        background-color: rgb(62, 2, 62);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+    }
+}
